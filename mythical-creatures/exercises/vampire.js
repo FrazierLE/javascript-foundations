@@ -7,15 +7,14 @@ class Vampire {
   this.ouncesDrank = 0;
 }
 drink() {
-  this.thirsty = false;
-  this.ouncesDrank += 1 * 10
-  this.drinkAmount = this.ouncesDrank + 10
-  console.log(this.drinkAmount)
-  for (var i = 0; i < 5; i++) {
-  if (this.ouncesDrank[i] >= 50) {console.log('I\'m too full to drink anymore!')}
+  this.thirsty = false
+    if (this.ouncesDrank < 50) {this.ouncesDrank+=10}
+    else if (this.ouncesDrank >= 50) {this.ouncesDrank = 50
+      return 'I\'m too full to drink anymore!'
 }
 }
 }
+
 
 
 
