@@ -8,7 +8,7 @@ class Dragon {
   greet() {
     return `Hi, ${this.rider}!`
   }
-  eat(hungry) {
+  eat() {
     this.hungryCount++
     if (this.hungryCount >= 3) {return this.hungry = false}
 }
